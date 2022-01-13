@@ -1,0 +1,14 @@
+﻿@model Zadanie_lab3.Models.FormModel
+@{ ViewData["Title"] = "Form-Created"; }
+
+
+
+<div class="text-left">
+    <h1 class="display-4">Dane z formularza</h1>
+
+    @for (var i = 1; i <= Model.Ilosc_powtorzen; i++)
+    {
+        @Html.DisplayFor(model => model.Name)
+        <br />
+    }
+</div>
